@@ -34,7 +34,6 @@ jobs:
         run: |
           cd src
           npm install
-          npm run build
 
       - name: Call API
         uses: ./src
