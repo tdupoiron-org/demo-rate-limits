@@ -30,3 +30,14 @@ jobs:
         run: |
           curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/rate_limit
 
+      - name: Build
+        run: |
+          cd src
+          npm install
+          npm run build
+
+      - name: Call API
+        uses: ./src
+        with:
+          NB_LOOPS: 10
+          INTERVAL_MILLI: 1000

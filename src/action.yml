@@ -1,0 +1,17 @@
+name: Call API
+description: Call an API
+
+inputs:
+  NB_LOOPS:
+    description: 'The number of loops to run'
+    required: true
+    default: 1
+
+  INTERVAL_MILLIS:
+    description: 'The interval in milliseconds between each loop'
+    required: true
+    default: 1000
+
+runs:
+  using: 'node12'
+  main: 'index.js'
