@@ -39,4 +39,4 @@ jobs:
         uses: ./src
         with:
           NB_LOOPS: 10
-          INTERVAL_MILLI: 1000
+          INTERVAL_MILLIS: 1000
