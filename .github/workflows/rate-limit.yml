@@ -4,14 +4,18 @@ name: Rate Limits
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      NB_LOOPS:
+        description: 'Number of loops'
+        required: true
+        default: 10
+      INTERVAL_MILLIS:
+        description: 'Interval in millis'
+        required: true
+        default: 1000
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -38,5 +42,5 @@ jobs:
       - name: Call API
         uses: ./src
         with:
-          NB_LOOPS: 10
-          INTERVAL_MILLIS: 1000
+          NB_LOOPS: ${{ github.event.inputs.NB_LOOPS }}
+          INTERVAL_MILLIS: ${{ github.event.inputs.INTERVAL_MILLIS }}
