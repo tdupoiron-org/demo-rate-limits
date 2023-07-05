@@ -16,6 +16,17 @@ async function getRepositories() {
 }
 
 async function main() {
+
+  // Check input variables
+  if (NbLoops == null || NbLoops == "") {
+    console.log("NB_LOOPS is not defined");
+    return;
+  }
+  if (IntervalMilli == null || IntervalMilli == "") {
+    console.log("INTERVAL_MILLI is not defined");
+    return;
+  }
+
   for (let i = 0; i < NbLoops; i++) {
     console.log(`Loop ${i}`);
     await getRepositories();
