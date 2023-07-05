@@ -82,5 +82,87 @@ jobs:
         with:
           script: |
             console.log("Hello World")
-            
-            
+            - uses: actions/github-script@v2.1.0
+            with:
+              script: |
+                console.log("Hello World")
+      - uses: actions/github-script@v6.2.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v6.1.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v5.1.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v6.1.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v6.0.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v5.1.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v5.0.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v4.1.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v4.1.0
+        with:
+          script: |
+            console.log("Hello World")     
+      - uses: actions/github-script@v4.0.2
+        with:
+          script: |
+            console.log("Hello World")            
+      - uses: actions/github-script@v4.0.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v4.0.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v3.1.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v3.1.0
+        with:
+          script: |
+            console.log("Hello World")     
+      - uses: actions/github-script@v3.0.2
+        with:
+          script: |
+            console.log("Hello World")             
+      - uses: actions/github-script@v3.0.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v3.0.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v2.0.1
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@v2.0.0
+        with:
+          script: |
+            console.log("Hello World")     
+      - uses: actions/github-script@v1.1.0
+        with:
+          script: |
+            console.log("Hello World")
