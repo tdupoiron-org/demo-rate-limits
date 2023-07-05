@@ -13,7 +13,7 @@ on:
         required: true
         type: number
         default: 10
-      INTERVAL_MILLIS:
+      INTERVAL_MILLI:
         description: 'Interval in millis'
         required: true
         type: number
@@ -47,4 +47,4 @@ jobs:
         uses: ./src
         with:
           NB_LOOPS: ${{ github.event.inputs.NB_LOOPS }}
-          INTERVAL_MILLIS: ${{ github.event.inputs.INTERVAL_MILLIS }}
+          INTERVAL_MILLI: ${{ github.event.inputs.INTERVAL_MILLI }}
