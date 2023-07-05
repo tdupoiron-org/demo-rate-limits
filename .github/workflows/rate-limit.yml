@@ -11,10 +11,12 @@ on:
       NB_LOOPS:
         description: 'Number of loops'
         required: true
+        type: number
         default: 10
       INTERVAL_MILLIS:
         description: 'Interval in millis'
         required: true
+        type: number
         default: 1000
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -28,6 +30,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # Runs a javascript block to call the rate limit api
       - name: Get Rate Limits
