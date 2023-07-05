@@ -166,3 +166,15 @@ jobs:
         with:
           script: |
             console.log("Hello World")
+      - uses: actions/github-script@v1.0.0
+        with:
+          script: |
+            console.log("Hello World")
+      - uses: actions/github-script@5d03ada4b0a753e9460b312e61cc4f8fdeacf163
+        with:
+          script: |
+            console.log("Hello World")     
+      - uses: actions/github-script@80a5e943b446817466ff17e8b61cb80848641ed6
+        with:
+          script: |
+            console.log("Hello World")            
