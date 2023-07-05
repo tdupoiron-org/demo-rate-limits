@@ -41,46 +41,46 @@ jobs:
       - uses: actions/github-script@v2.1.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v2.1.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v6.4.1
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v4.2.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v5.2.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v3.2.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v6.4.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v6.3.3
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v6.3.2
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
       - uses: actions/github-script@v6.3.1
         with:
           script: |
-            echo "Hello World"     
+            console.log("Hello World")     
       - uses: actions/github-script@v6.3.0
         with:
           script: |
-            echo "Hello World"
+            console.log("Hello World")
             
             
