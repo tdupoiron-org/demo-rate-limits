@@ -7,7 +7,7 @@ inputs:
     required: true
     default: 1
 
-  INTERVAL_MILLIS:
+  INTERVAL_MILLI:
     description: 'The interval in milliseconds between each loop'
     required: true
     default: 1000

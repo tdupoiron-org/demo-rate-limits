@@ -42,14 +42,3 @@ jobs:
       - name: Get Rate Limits
         run: |
           curl -H "Accept: application/vnd.github.v3+json", -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/rate_limit
-
-      - name: Build
-        run: |
-          cd src
-          npm install
-
-      - name: Call API
-        uses: ./src
-        with:
-          NB_LOOPS: ${{ github.event.inputs.NB_LOOPS }}
-          INTERVAL_MILLI: ${{ github.event.inputs.INTERVAL_MILLI }}
