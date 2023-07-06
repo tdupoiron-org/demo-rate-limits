@@ -52,3 +52,7 @@ jobs:
             });
             console.log(response);
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Download actions
+        run: |
+          curl -H "Accept: application/vnd.github.v3+json", -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/actions/checkout/tarball/c85c95e3d7251135ab7dc9ce3241c5835cc595a9
