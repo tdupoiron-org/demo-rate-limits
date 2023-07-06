@@ -43,8 +43,12 @@ jobs:
           cd src
           npm install
 
-      - name: Call API
-        uses: ./src
+      - name: List org repositories
+        uses: actions/github-script@v3
         with:
-          NB_LOOPS: ${{ github.event.inputs.NB_LOOPS }}
-          INTERVAL_MILLI: ${{ github.event.inputs.INTERVAL_MILLI }}
+          script: |
+            const response = await github.repos.listForOrg({
+              org: 'tdupoiron-org'
+            });
+            console.log(response);
+          github-token: ${{ secrets.GITHUB_TOKEN }}
